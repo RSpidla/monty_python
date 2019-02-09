@@ -4,4 +4,6 @@
 // STEP 1 - Initialze variable and require node https module
 const https = require('https');
 
+
+// Test Message
 console.log('I did it!');
