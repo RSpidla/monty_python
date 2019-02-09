@@ -2,18 +2,19 @@
 
 
 // STEP 1 - Initialze variable and require node https module
-const https = require('https');
+var https = require('https');
 
 // STEP 2 - 
-let options = {
+var options = {
     host: 'www.example.org',
     path: '/'
 };
 
 // STEP 3 - 
 // called by https when the request is made.
-let callback = function() {
+var callback = function(response) {
     console.log('In response handler callback!');
+    console.log('Response: ', response);
   }
   
   console.log("I'm about to make the request!");
